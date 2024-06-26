@@ -157,7 +157,7 @@
     .post {
       display: grid;
       max-width: 1000px;
-      margin: 200px auto;
+      margin: 100px auto;
       grid-gap: 10px 50px;
       grid-template-columns: 3fr 12fr 5fr;
     }
@@ -199,6 +199,17 @@
     .tip-right {
       grid-column: span 1 / -1;
       border-left: 2px solid var(--yellow);
+    }
+
+
+    @media screen and (max-width:640px) {
+      .post {
+      display: grid;
+      max-width: 1000px;
+      margin: 100px 20px;
+      grid-gap: 10px 50px;
+      grid-template-columns: 1fr;
+    }
     }
   </style>
 </body>
